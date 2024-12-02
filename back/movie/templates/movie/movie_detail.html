@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>상세 페이지</h1>
+    <h2>{{ title }}</h2>
+    <!-- YouTube 영상 삽입 -->
+    <div class="movie-trailer">
+      <iframe 
+          width="560" 
+          height="315" 
+          src="https://www.youtube.com/embed/{{ youtube_trailer_id }}" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+      </iframe>
+  </div>
+  <p>영화를 보시려면 아래 버튼을 클릭하여 YouTube에서 결제 후 시청하세요.</p>
+  <a href="https://www.youtube.com/watch?v={{ youtube_trailer_id }}" target="_blank">
+      <button>영화 결제 및 시청</button>
+  </a>
+    <img src="{{ poster_path }}" alt="" />
+    <p>개봉일 : {{ release_data }}</p>
+    <p>줄거리 : {{ overview }}</p>
+    <p>tmdb_id : {{ tmdb_id }}</p>
+    <hr />
+    <h3>필터링된 대사</h3>
+    {% for script, data in filtered_scripts.items %}
+        <div class="script-container">
+            <strong class="script-text" role="button" tabindex="0">{{ script }}</strong>
+            <br />
+            <small>Timestamp: {{ data.timestamp }}</small><br />
+            <strong>사용된 단어:</strong>
+            <ul>
+                {% for word in data.words %}
+                    <li>{{ word }}</li>
+                {% endfor %}
+            </ul>
+            <div class="gpt-output" style="display: none;">
+                <div class="loading" style="display: none;">분석 중...</div>
+                <div class="content"></div>
+            </div>
+        </div>
+    {% endfor %}
+
+    {% url 'movie:analyze_script' as analyze_url %}
+
+    
+    <script>
+
+// 타이핑 효과 구현
+function typeText(element, text, delay = 25) { // delay 값을 더 빠르게 조정
+  element.innerHTML = ''; // 초기화
+  let i = 0;
+  function typeChar() {
+      if (i < text.length) {
+          const char = text[i];
+          if (char === '\n') {
+              element.innerHTML += '<br>';
+          } else {
+              element.innerHTML += char;
+          }
+          i++;
+          setTimeout(typeChar, delay); // 다음 글자 출력
+      }
+  }
+  typeChar();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const ANALYZE_URL = '{{ analyze_url|safe }}';
+  const scriptContainers = document.querySelectorAll('.script-container');
+  
+  scriptContainers.forEach(container => {
+      const scriptElement = container.querySelector('.script-text');
+      const gptOutput = container.querySelector('.gpt-output');
+      const loadingDiv = container.querySelector('.loading');
+      const contentDiv = container.querySelector('.content');
+      let analyzed = false;
+
+      scriptElement.addEventListener('click', async function() {
+          if (analyzed) {
+              gptOutput.style.display = gptOutput.style.display === 'none' ? 'block' : 'none';
+              return;
+          }
+
+          const scriptText = this.textContent;
+          const wordElements = container.querySelectorAll('ul li');
+          const words = Array.from(wordElements).map(li => li.textContent);
+
+          console.log(words)
+
+          gptOutput.style.display = 'block';
+          loadingDiv.style.display = 'block';
+
+          try {
+              const response = await fetch(ANALYZE_URL, {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                      'X-CSRFToken': getCookie('csrftoken')
+                  },
+                  body: JSON.stringify({
+                      script: scriptText,
+                      words: words
+                  })
+              });
+
+              const data = await response.json();
+              
+              // 응답 텍스트 그대로 출력 (strong 없이)
+              typeText(contentDiv, data.response, 25); // 타이핑 효과 적용
+            
+              analyzed = true;
+          } catch (error) {
+              contentDiv.innerHTML = `<p class="error">분석 중 오류가 발생했습니다.</p>`;
+          } finally {
+              loadingDiv.style.display = 'none';
+          }
+      });
+  });
+});
+
+function getCookie(name) {
+  let cookieValue = null;
+  if (document.cookie && document.cookie !== '') {
+      const cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+          const cookie = cookies[i].trim();
+          if (cookie.substring(0, name.length + 1) === (name + '=')) {
+              cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+              break;
+          }
+      }
+  }
+  return cookieValue;
+}
+
+    </script>
+
+    <style>
+        .script-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+
+        .script-text {
+            cursor: pointer;
+            padding: 5px;
+            display: inline-block;
+            color: #2c5282;
+            transition: background-color 0.2s;
+        }
+
+        .script-text:hover {
+            background-color: #ebf8ff;
+            border-radius: 3px;
+        }
+
+        .gpt-output {
+            margin: 15px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+
+        .loading {
+            color: #666;
+            font-style: italic;
+            margin: 10px 0;
+        }
+
+        .error {
+            color: #e53e3e;
+            padding: 10px;
+            background-color: #fff5f5;
+            border-radius: 3px;
+        }
+
+        .grammar-explanation, .examples {
+            margin: 10px 0;
+        }
+
+        .examples ul {
+            margin-left: 20px;
+            list-style-type: disc;
+        }
+
+
+        .examples .english {
+          color: #2c5282;
+          font-weight: 500;
+          margin-bottom: 4px;
+      }
+      
+      .examples .korean {
+          color: #4a5568;
+          margin-bottom: 12px;
+      }
+      
+      .examples li {
+          margin-bottom: 16px;
+      }
+    </style>
+</body>
+</html>

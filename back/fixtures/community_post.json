@@ -1,0 +1,279 @@
+[
+  {
+    "model": "community.post",
+    "pk": 1,
+    "fields": {
+      "title": "빅뱅이론 대본집 즉시다운",
+      "content": "빅뱅이론 대본, 해석 자료 공유해요~",
+      "category": "LearningResource",
+      "user": 101,
+      "created_at": "2024-11-26T04:27:09.298Z",
+      "updated_at": "2024-11-26T04:27:09.298Z",
+      "file": "post_files/빅뱅이론_대사_모음집.pdf"
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 2,
+    "fields": {
+      "title": "베놈으로 영어 공부하는 꿀팁",
+      "content": "1. 러ㅣ닝랴ㅓㅣ먀저ㄷ\r\n2. 니ㅓㅇ리쳄劫졀\r\n3..ㅇ럼니ㅑ딕\r\n\r\n\r\n화이팅!!",
+      "category": "free",
+      "user": 101,
+      "created_at": "2024-11-26T04:29:02.746Z",
+      "updated_at": "2024-11-26T04:29:02.746Z",
+      "file": ""
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 6,
+    "fields": {
+      "title": "슈렉 영작 수정한 거 오류 봐실분",
+      "content": "ㅁㄴㅇㄻㄴㅇㄻㄴㅇㄹ",
+      "category": "QandA",
+      "user": 1,
+      "created_at": "2024-11-26T04:39:41.749Z",
+      "updated_at": "2024-11-26T04:39:41.749Z",
+      "file": "post_files/24년하채용박람회이용방법_홈페이지게시.pdf"
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 7,
+    "fields": {
+      "title": "혹시 겨울왕국으로 영작 스터디 하실 분 있나요",
+      "content": "같이 공부하실 분 구합니다 ㅎㅎ 댓글로 알려주세요",
+      "category": "free",
+      "user": 1,
+      "created_at": "2024-11-26T04:40:26.250Z",
+      "updated_at": "2024-11-26T04:40:39.160Z",
+      "file": ""
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 8,
+    "fields": { "title": "해리포터 덕후님들", "content": "ㅋㅇㄻㄹ", "category": "free", "user": 2, "created_at": "2024-11-26T04:43:18.967Z", "updated_at": "2024-11-26T04:43:18.968Z", "file": "" }
+  },
+  {
+    "model": "community.post",
+    "pk": 9,
+    "fields": {
+      "title": "프렌즈 학습일지 템플릿 공유합니다",
+      "content": "제가 프렌즈로 영어 공부했던 학습일지인데\r\n필요하신 분 다운 받아가시라고 올려요~",
+      "category": "LearningResource",
+      "user": 2,
+      "created_at": "2024-11-26T04:44:59.098Z",
+      "updated_at": "2024-11-26T04:44:59.098Z",
+      "file": "post_files/12기_5회차_월말평가_관통PJT_제출가이드.pdf"
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 10,
+    "fields": {
+      "title": "혹시 위키드 뮤지컬로 봐보신 분?",
+      "content": "영화랑 내용이 많이 다른 거 같네요",
+      "category": "QandA",
+      "user": 2,
+      "created_at": "2024-11-26T04:46:10.312Z",
+      "updated_at": "2024-11-26T04:46:10.312Z",
+      "file": ""
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 11,
+    "fields": {
+      "title": "영어로 끝말잇기 해요 ㅋㅋ",
+      "content": "apple",
+      "category": "free",
+      "user": 3,
+      "created_at": "2024-11-26T04:48:19.769Z",
+      "updated_at": "2024-11-26T04:48:19.769Z",
+      "file": ""
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 12,
+    "fields": {
+      "title": "새해 목표 슬슬 세우려는데..",
+      "content": "새해 목표는 영어 공부죠 !!",
+      "category": "free",
+      "user": 4,
+      "created_at": "2024-11-26T05:01:35.719Z",
+      "updated_at": "2024-11-26T05:01:35.719Z",
+      "file": ""
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 13,
+    "fields": {
+      "title": "저 오늘 플래티넘 찍었어요 ㅋㅎㅋ",
+      "content": "ㅎㅎ",
+      "category": "free",
+      "user": 4,
+      "created_at": "2024-11-26T05:04:07.896Z",
+      "updated_at": "2024-11-26T05:04:21.609Z",
+      "file": ""
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 14,
+    "fields": {
+      "title": "다이아 유저분 계신가요.. 질문좀",
+      "content": "어떻게하면 다이아 되나요 ㅜㅜ",
+      "category": "QandA",
+      "user": 4,
+      "created_at": "2024-11-26T05:04:56.512Z",
+      "updated_at": "2024-11-26T05:04:56.512Z",
+      "file": ""
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 15,
+    "fields": {
+      "title": "영화만 봤는데 토익 900점 나온 후기",
+      "content": "ㅎㅎㅎㅎㅎㅎ",
+      "category": "free",
+      "user": 4,
+      "created_at": "2024-11-26T05:07:07.504Z",
+      "updated_at": "2024-11-26T05:07:07.504Z",
+      "file": ""
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 16,
+    "fields": { "title": "초보 필독", "content": "ㅇㄹㅇ", "category": "LearningResource", "user": 5, "created_at": "2024-11-26T05:15:28.408Z", "updated_at": "2024-11-26T05:15:28.408Z", "file": "" }
+  },
+  {
+    "model": "community.post",
+    "pk": 17,
+    "fields": {
+      "title": "영어 공부 하는 이유...",
+      "content": "모르겠는데 그냥 하고 있어요...\r\n다들 왜 하는 건가요 ㅠㅠㅠㅠㅠㅠㅠㅠ",
+      "category": "QandA",
+      "user": 5,
+      "created_at": "2024-11-26T05:24:19.330Z",
+      "updated_at": "2024-11-26T05:24:19.330Z",
+      "file": ""
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 18,
+    "fields": {
+      "title": "수능 영어 공부법 공유해주실 수 있나요?",
+      "content": "helppppp",
+      "category": "QandA",
+      "user": 6,
+      "created_at": "2024-11-26T05:28:06.537Z",
+      "updated_at": "2024-11-26T05:28:06.537Z",
+      "file": ""
+    }
+  },
+  {
+    "model": "community.post",
+    "pk": 19,
+    "fields": {
+      "title": "감명 깊었던 영어 명대사들 모아봤어요",
+      "content": "ㄹㄹㅇㄹㅇ",
+      "category": "LearningResource",
+      "user": 6,
+      "created_at": "2024-11-26T05:34:46.339Z",
+      "updated_at": "2024-11-26T05:35:29.290Z",
+      "file": "post_files/35425_68747.jpeg"
+    }
+  },
+  { "model": "community.comment", "pk": 1, "fields": { "post": 2, "user": 1, "content": "우와 유용해요ㅎㅎ", "created_at": "2024-11-26T04:41:01.673Z" } },
+  { "model": "community.comment", "pk": 2, "fields": { "post": 1, "user": 1, "content": "감사합니다 !!\n", "created_at": "2024-11-26T04:41:18.903Z" } },
+  { "model": "community.comment", "pk": 3, "fields": { "post": 1, "user": 2, "content": "감사히 쓰겠습니다~", "created_at": "2024-11-26T04:42:17.321Z" } },
+  { "model": "community.comment", "pk": 4, "fields": { "post": 7, "user": 2, "content": "저요!", "created_at": "2024-11-26T04:42:35.687Z" } },
+  { "model": "community.comment", "pk": 5, "fields": { "post": 7, "user": 3, "content": "저요!!!", "created_at": "2024-11-26T04:48:44.440Z" } },
+  { "model": "community.comment", "pk": 6, "fields": { "post": 2, "user": 3, "content": "대박... 바로 해봐야겠어요", "created_at": "2024-11-26T04:49:16.535Z" } },
+  { "model": "community.comment", "pk": 7, "fields": { "post": 8, "user": 3, "content": "ㅋㅋㅋㅋㅋ아ㅏㅏ\n", "created_at": "2024-11-26T04:59:22.007Z" } },
+  { "model": "community.comment", "pk": 8, "fields": { "post": 8, "user": 3, "content": "맞아요 ㅋㅋㅋㅋ", "created_at": "2024-11-26T04:59:28.502Z" } },
+  { "model": "community.comment", "pk": 9, "fields": { "post": 8, "user": 3, "content": "나중에 같이 영화관 가요 ㅎ", "created_at": "2024-11-26T04:59:39.646Z" } },
+  { "model": "community.comment", "pk": 10, "fields": { "post": 11, "user": 3, "content": "easy", "created_at": "2024-11-26T04:59:58.455Z" } },
+  { "model": "community.comment", "pk": 11, "fields": { "post": 10, "user": 3, "content": "그런가...", "created_at": "2024-11-26T05:00:10.518Z" } },
+  { "model": "community.comment", "pk": 12, "fields": { "post": 9, "user": 4, "content": "오오 저 너무 필요했어요 !! 감사합니다~", "created_at": "2024-11-26T05:01:49.095Z" } },
+  { "model": "community.comment", "pk": 13, "fields": { "post": 6, "user": 4, "content": "저도 모르겠네요..", "created_at": "2024-11-26T05:02:10.519Z" } },
+  { "model": "community.comment", "pk": 14, "fields": { "post": 8, "user": 4, "content": "저는 해리포터 잘 몰라서 ㅋㅋ", "created_at": "2024-11-26T05:02:26.808Z" } },
+  { "model": "community.comment", "pk": 15, "fields": { "post": 2, "user": 4, "content": "짱이다..", "created_at": "2024-11-26T05:02:51.343Z" } },
+  { "model": "community.comment", "pk": 16, "fields": { "post": 7, "user": 4, "content": "저요~", "created_at": "2024-11-26T05:03:02.326Z" } },
+  { "model": "community.comment", "pk": 17, "fields": { "post": 9, "user": 4, "content": "감사합니다~", "created_at": "2024-11-26T05:07:38.614Z" } },
+  { "model": "community.comment", "pk": 18, "fields": { "post": 15, "user": 5, "content": "우와 ... 축하해요!", "created_at": "2024-11-26T05:09:01.678Z" } },
+  { "model": "community.comment", "pk": 19, "fields": { "post": 13, "user": 5, "content": "오오 ㅋㅋ 축하합니다 ㅎ", "created_at": "2024-11-26T05:09:11.007Z" } },
+  { "model": "community.comment", "pk": 20, "fields": { "post": 11, "user": 5, "content": "yellow", "created_at": "2024-11-26T05:09:19.289Z" } },
+  { "model": "community.comment", "pk": 21, "fields": { "post": 7, "user": 5, "content": "저요저요저요", "created_at": "2024-11-26T05:09:28.895Z" } },
+  { "model": "community.comment", "pk": 22, "fields": { "post": 9, "user": 5, "content": "감쟈합니다 ㅎㅎㅎㅎ", "created_at": "2024-11-26T05:09:44.264Z" } },
+  { "model": "community.comment", "pk": 23, "fields": { "post": 14, "user": 5, "content": "하루에 몇 시간 해야 하는 거야..", "created_at": "2024-11-26T05:10:12.127Z" } },
+  { "model": "community.comment", "pk": 24, "fields": { "post": 12, "user": 5, "content": "운동도 하고.. 할게 많네요 ㅜ", "created_at": "2024-11-26T05:11:27.136Z" } },
+  { "model": "community.comment", "pk": 25, "fields": { "post": 2, "user": 5, "content": "천젠가...?", "created_at": "2024-11-26T05:12:03.623Z" } },
+  { "model": "community.comment", "pk": 26, "fields": { "post": 1, "user": 5, "content": "너무 필요했는데 너무 감사해요", "created_at": "2024-11-26T05:12:27.063Z" } },
+  { "model": "community.comment", "pk": 27, "fields": { "post": 8, "user": 6, "content": "ㅋㅋㅋㅋㅋ ", "created_at": "2024-11-26T05:28:26.033Z" } },
+  { "model": "community.comment", "pk": 28, "fields": { "post": 11, "user": 6, "content": "why", "created_at": "2024-11-26T05:28:44.240Z" } },
+  { "model": "community.comment", "pk": 29, "fields": { "post": 15, "user": 6, "content": "와.. 대단하시다", "created_at": "2024-11-26T05:29:02.312Z" } },
+  { "model": "community.comment", "pk": 30, "fields": { "post": 16, "user": 6, "content": "자료 감사합니다!", "created_at": "2024-11-26T05:29:18.889Z" } },
+  { "model": "community.comment", "pk": 31, "fields": { "post": 9, "user": 6, "content": "잘 쓸게요 감사합니다", "created_at": "2024-11-26T05:29:37.024Z" } },
+  { "model": "community.comment", "pk": 32, "fields": { "post": 17, "user": 6, "content": "저도.. 영어는 인생의 숙제네요", "created_at": "2024-11-26T05:30:11.170Z" } },
+  { "model": "community.comment", "pk": 33, "fields": { "post": 13, "user": 6, "content": "저도 곧 다이아 찍을 겁니다!@", "created_at": "2024-11-26T05:30:42.750Z" } },
+  { "model": "community.comment", "pk": 34, "fields": { "post": 14, "user": 6, "content": "저 곧 다이아 ..!", "created_at": "2024-11-26T05:31:16.040Z" } },
+  { "model": "community.comment", "pk": 35, "fields": { "post": 15, "user": 101, "content": "대박..", "created_at": "2024-11-26T05:38:53.536Z" } },
+  { "model": "community.comment", "pk": 36, "fields": { "post": 9, "user": 101, "content": "호랑이님 최고!", "created_at": "2024-11-26T05:39:11.279Z" } },
+  { "model": "community.comment", "pk": 37, "fields": { "post": 17, "user": 101, "content": "영어 재밌어요", "created_at": "2024-11-26T05:39:33.351Z" } },
+  { "model": "community.comment", "pk": 38, "fields": { "post": 11, "user": 101, "content": "yammy", "created_at": "2024-11-26T05:40:12.176Z" } },
+  { "model": "community.comment", "pk": 39, "fields": { "post": 7, "user": 101, "content": "저도 할래요", "created_at": "2024-11-26T05:40:42.608Z" } },
+  { "model": "community.follow", "pk": 1, "fields": { "follower": 1, "followed": 101 } },
+  { "model": "community.follow", "pk": 2, "fields": { "follower": 2, "followed": 1 } },
+  { "model": "community.follow", "pk": 3, "fields": { "follower": 2, "followed": 101 } },
+  { "model": "community.follow", "pk": 4, "fields": { "follower": 3, "followed": 101 } },
+  { "model": "community.follow", "pk": 5, "fields": { "follower": 3, "followed": 1 } },
+  { "model": "community.follow", "pk": 6, "fields": { "follower": 3, "followed": 2 } },
+  { "model": "community.follow", "pk": 7, "fields": { "follower": 4, "followed": 2 } },
+  { "model": "community.follow", "pk": 8, "fields": { "follower": 4, "followed": 3 } },
+  { "model": "community.follow", "pk": 9, "fields": { "follower": 4, "followed": 101 } },
+  { "model": "community.follow", "pk": 10, "fields": { "follower": 4, "followed": 1 } },
+  { "model": "community.follow", "pk": 11, "fields": { "follower": 5, "followed": 101 } },
+  { "model": "community.follow", "pk": 12, "fields": { "follower": 5, "followed": 4 } },
+  { "model": "community.follow", "pk": 13, "fields": { "follower": 5, "followed": 1 } },
+  { "model": "community.follow", "pk": 14, "fields": { "follower": 5, "followed": 3 } },
+  { "model": "community.follow", "pk": 15, "fields": { "follower": 6, "followed": 2 } },
+  { "model": "community.follow", "pk": 16, "fields": { "follower": 6, "followed": 4 } },
+  { "model": "community.follow", "pk": 17, "fields": { "follower": 6, "followed": 101 } },
+  { "model": "community.follow", "pk": 18, "fields": { "follower": 101, "followed": 4 } },
+  { "model": "community.follow", "pk": 19, "fields": { "follower": 101, "followed": 1 } },
+  { "model": "community.follow", "pk": 20, "fields": { "follower": 101, "followed": 3 } },
+  { "model": "community.follow", "pk": 21, "fields": { "follower": 101, "followed": 2 } },
+  { "model": "community.like", "pk": 1, "fields": { "user": 101, "post": 1, "created_at": "2024-11-26T04:27:18.618Z" } },
+  { "model": "community.like", "pk": 2, "fields": { "user": 1, "post": 1, "created_at": "2024-11-26T04:41:06.585Z" } },
+  { "model": "community.like", "pk": 3, "fields": { "user": 2, "post": 1, "created_at": "2024-11-26T04:42:18.880Z" } },
+  { "model": "community.like", "pk": 4, "fields": { "user": 2, "post": 9, "created_at": "2024-11-26T04:45:02.610Z" } },
+  { "model": "community.like", "pk": 5, "fields": { "user": 3, "post": 2, "created_at": "2024-11-26T04:48:33.188Z" } },
+  { "model": "community.like", "pk": 6, "fields": { "user": 3, "post": 7, "created_at": "2024-11-26T04:48:57.754Z" } },
+  { "model": "community.like", "pk": 7, "fields": { "user": 4, "post": 9, "created_at": "2024-11-26T05:01:52.850Z" } },
+  { "model": "community.like", "pk": 8, "fields": { "user": 4, "post": 7, "created_at": "2024-11-26T05:03:07.415Z" } },
+  { "model": "community.like", "pk": 9, "fields": { "user": 4, "post": 2, "created_at": "2024-11-26T05:07:28.560Z" } },
+  { "model": "community.like", "pk": 10, "fields": { "user": 4, "post": 8, "created_at": "2024-11-26T05:07:47.209Z" } },
+  { "model": "community.like", "pk": 11, "fields": { "user": 5, "post": 15, "created_at": "2024-11-26T05:08:54.090Z" } },
+  { "model": "community.like", "pk": 12, "fields": { "user": 5, "post": 7, "created_at": "2024-11-26T05:09:29.655Z" } },
+  { "model": "community.like", "pk": 13, "fields": { "user": 5, "post": 12, "created_at": "2024-11-26T05:11:17.763Z" } },
+  { "model": "community.like", "pk": 14, "fields": { "user": 5, "post": 13, "created_at": "2024-11-26T05:11:38.073Z" } },
+  { "model": "community.like", "pk": 15, "fields": { "user": 5, "post": 2, "created_at": "2024-11-26T05:11:52.528Z" } },
+  { "model": "community.like", "pk": 16, "fields": { "user": 6, "post": 8, "created_at": "2024-11-26T05:28:32.641Z" } },
+  { "model": "community.like", "pk": 17, "fields": { "user": 6, "post": 16, "created_at": "2024-11-26T05:29:08.316Z" } },
+  { "model": "community.like", "pk": 18, "fields": { "user": 6, "post": 9, "created_at": "2024-11-26T05:29:41.318Z" } },
+  { "model": "community.like", "pk": 19, "fields": { "user": 6, "post": 1, "created_at": "2024-11-26T05:30:27.625Z" } },
+  { "model": "community.like", "pk": 20, "fields": { "user": 6, "post": 13, "created_at": "2024-11-26T05:30:47.088Z" } },
+  { "model": "community.like", "pk": 21, "fields": { "user": 6, "post": 2, "created_at": "2024-11-26T05:37:39.735Z" } },
+  { "model": "community.like", "pk": 22, "fields": { "user": 101, "post": 15, "created_at": "2024-11-26T05:38:41.009Z" } },
+  { "model": "community.like", "pk": 23, "fields": { "user": 101, "post": 9, "created_at": "2024-11-26T05:38:58.385Z" } },
+  { "model": "community.like", "pk": 24, "fields": { "user": 101, "post": 7, "created_at": "2024-11-26T05:40:35.080Z" } },
+  { "model": "community.like", "pk": 25, "fields": { "user": 101, "post": 13, "created_at": "2024-11-26T05:48:20.665Z" } }
+]

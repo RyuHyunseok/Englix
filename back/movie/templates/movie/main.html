@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>메인페이지</h1>
+
+    <form action="{% url 'movie:level_movies' %}" method="POST">
+      {% csrf_token %}
+
+      <label for="level">난이도:</label>
+      <select name="level" id="level">
+        <option value="Beginner">초급</option>
+        <option value="Intermediate">중급</option>
+        <option value="Advanced">고급</option>
+      </select>
+      <br />
+
+      <label for="goal">목표:</label>
+      <select name="goal" id="goal">
+        <option value="수능">수능</option>
+        <option value="토익">토익</option>
+        <option value="비즈니스">비즈니스</option>
+      </select>
+      <br />
+
+      <button type="submit">영화 조회</button>
+    </form>
+  </body>
+</html>

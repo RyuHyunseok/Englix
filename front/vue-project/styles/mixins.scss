@@ -1,0 +1,22 @@
+// src/styles/mixins.scss
+@mixin card {
+    background-color: var(--card-background) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 1rem;
+    
+    &:hover {
+      box-shadow: 0 4px 8px var(--shadow-color);
+    }
+  }
+
+  @mixin responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    width: calc(100% - var(--sidebar-width));
+    margin-left: var(--sidebar-width);
+    padding: 1.5rem;
+  }
